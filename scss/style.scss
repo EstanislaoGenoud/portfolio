@@ -166,7 +166,7 @@ section .header {
         span{
             display: inline-block;
             background-color: #1e40af;
-            pad: 2px 9px;
+            padding: 2px 80px;
             margin-bottom: 1rem;
             font-size: 1.75rem;
             color: #fff;
@@ -216,11 +216,117 @@ section .header {
 
         &:hover{
             background-color: #323232;
-            color: #fff;
+            border-color: #fff;
             
+        }
+        .content {
+            flex: 1;
+            margin-bottom: 2rem;
+        }
+        h4{
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        h3{
+            color: #fff;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            border-bottom: 2px dashed #fff;
+        }
+        p{
+            color: #fff;
+            margin-bottom: 0.75rem;
+
+            i{
+                color: #ccc;
+                font-size: 1.2rem;
+                margin-right: 0.3rem;
+            }
+        }
+        button{
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #fff;
+
+            &:hover{
+                background-color: #1e40af;
+                border-color: #1e40af;
+            }
         }
     }
 }
+
+footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+
+    .column {
+        .logo {
+            max-width: 100px;
+            margin-bottom: 2rem;
+        }
+        p {
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+        .socials {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            a{
+                color: #ccc;
+                border: 1px solid #ccc;
+                padding: 5px 10px;
+                font-size: 1.25rem;
+                border-radius: 100%;
+                transform: all 0.3s ease;
+
+                &:hover{
+                    color: #fff;
+                    background-color: #1d4ed8;
+                    border-color: #1d4ed8;
+                }
+
+                
+            }
+            h4{
+                color: #fff;
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            
+        }
+        a{
+            display: block;
+            color: #ccc;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        
+            &:hover {
+                color: #1d4ed8;
+            }
+        }
+    }
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@import "./partials/queries";
 
 
 
